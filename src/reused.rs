@@ -83,7 +83,7 @@ where
     Authority: TryFrom<A>,
     <Authority as TryFrom<A>>::Error: Into<HttpError>,
 {
-    builder(client::https_default(), Scheme::HTTP, authority)
+    builder(client::https_default(), Scheme::HTTPS, authority)
 }
 
 /// Builder of [`ReusedService`].
